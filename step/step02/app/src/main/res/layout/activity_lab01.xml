@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:background="#FFFF12"
+        android:padding="16dp"
+        android:ellipsize="end"
+        android:visibility="invisible"
+        android:autoLink="email|web"
+        android:text="네이버 (naver.com)" />
+
+    <Button
+        android:id="@+id/button_non_visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <ImageView
+        android:id="@+id/test_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:src="@drawable/test"
+        android:maxHeight="200dp"
+        android:maxWidth="200dp"
+        android:tint="#800000ff"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:text="클릭하면 이미지가 사라집니다."
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/item"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="홍길동"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="안녕하세요. 잘 지내시죠?"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"/>
+
+    </LinearLayout>
+
+    <!--
+        weight가 1로 선언되었으므로, 가로 방향 여백을 모드 LinearLayout이 차지하게 됩니다.
+        그러므로 TextView는 화면 오른쪽으로 밀려서 출력될 수 밖에 없습니다.
+    -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017.01.28"
+        android:layout_marginLeft="16dp" />
+
+
+</LinearLayout>
